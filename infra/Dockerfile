@@ -1,5 +1,5 @@
 # CI: taskflow-infra
-FROM node:24-slim
+FROM node:22-slim
 
 WORKDIR /app
 
