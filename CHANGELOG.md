@@ -2,6 +2,18 @@
 
 Todas las versiones siguen [SemVer](https://semver.org/lang/es/): `MAJOR.MINOR.PATCH`.
 
+## [1.5.0]
+### Added
+#### TASKFLOW-101
+- Esquema inicial de base de datos (migración `0002_add_due_date.sql`).
+- Validación de pruebas.
+- POST /api/tasks acepta una fecha opcional.
+- POST y GET devuelven la fecha cuando existe.
+- Una tarea sin fecha continúa siendo válida.
+- Una fecha inválida obtiene HTTP 400.
+- La migración conserva las tareas existentes.
+- Pruebas anteriores y nuevas quedan verdes.
+
 ## [1.4.0] - Baseline de release actual
 ### Added
 - Marcado de tareas como completadas.
